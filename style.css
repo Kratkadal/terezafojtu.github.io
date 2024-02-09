@@ -36,8 +36,8 @@ nav a {
 }
 
 .logo {
-  width: 6rem;
   height: 100%;
+  width: 6em;
   background-image: url(./pictures/logo_nav.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -52,14 +52,14 @@ nav a {
 
 h1 {
   color: #9a8fb3;
-  font-size: 6vw;
+  font-size: 7em;
   font-weight: 600;
   letter-spacing:-0.5rem;
   margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 2.7vw;
+  font-size: 3em;
   font-weight: 600;
 }
 
@@ -83,10 +83,26 @@ h2 {
 }
 
 /**SECTION 2**/
+.flexleft_s2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 500px;
+  height: 500px;
+  background-image: url(./pictures/s2_logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0rem 8rem;
+  align-self: center;
+}
+
 .p_s2 {
   font-weight: 700;
   text-align: center;
   margin-top: 1em;
+  font-size: 4em;
+  letter-spacing:-0.3rem;
 }
 
 .text {
@@ -236,26 +252,19 @@ span {
 
 /*CSS breakpoints or media query breakpoints*/
 @media screen and (max-width: 1300px){
+    .p_s2, .text {
+      padding: 2em 0em 1em 0em;
+    }
+
+    .flex_hero_right {
+      padding: 10em;
+    }
+
       nav a {
       font-size: 2vw;
     }
-  
-    .p_s2 {
-      font-size: 3em;
-      letter-spacing:-0.3rem;
-    }  
 
     .flexleft_s2 {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 1fr);
-      width: 500px;
-      height: 500px;
-      background-image: url(./pictures/s2_logo.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin: 0rem 8rem;
       align-self: center;
     }
   
@@ -269,14 +278,6 @@ span {
       font-size: 4em;
     }
 
-    h1 {
-      font-size: 5rem;
-    }
-    
-    h2 {
-      font-size: 2rem;
-    }
-
     .flex_hero_right p {
       font-size: 2rem;
     }
@@ -287,11 +288,6 @@ span {
   }
 
 @media screen and (min-width: 1300px){
-  .p_s2 {
-    font-size: 4em;
-    letter-spacing:-0.3rem;
-  }
-
   .section_4 {
     margin-left: 10vw;
     margin-right: 10vw;
@@ -301,18 +297,6 @@ span {
     height: 6em;
   }
 
-  .flexleft_s2 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    width: 500px;
-    height: 500px;
-    background-image: url(./pictures/s2_logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0rem 8rem;
-  }
   
   .section_2 {
     height: 30rem;
