@@ -47,3 +47,13 @@ icons.forEach(icon => {
     highlightIcons([...icons].indexOf(icon));
   });
 });
+
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector(".navbar");
+const loham = document.querySelector(".loham");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("ahoj");
+  navbar.classList.toggle("ahoj");
+  loham.classList.toggle("ahoj")
+})
