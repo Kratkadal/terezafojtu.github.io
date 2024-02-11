@@ -87,20 +87,6 @@ h2 {
 }
 
 /**SECTION 2**/
-.flexleft_s2 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  width: 500px;
-  height: 500px;
-  background-image: url(./pictures/s2_logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 0rem 8rem;
-  align-self: center;
-}
-
 .p_s2 {
   font-weight: 700;
   text-align: center;
@@ -196,11 +182,8 @@ i {
 }
 
 .grid_s4 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
   width: 90%;
   align-self: center;
-  gap: 1rem;
 }
 
 .tf {
@@ -214,6 +197,8 @@ i {
   padding: 1rem;
   font-weight: 300;
   font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 span {
@@ -256,6 +241,23 @@ span {
 
 /*CSS breakpoints or media query breakpoints*/
 @media screen and (max-width: 1300px){
+    .tf {
+      display: none;
+    }
+
+    .style_bubbles {
+      font-size: 3em;
+      margin-bottom: 1em;
+    }
+
+    .heart1, .heart5 {
+      align-self: center;
+    }
+
+    .heart3, .heart7 {
+      justify-self: center;
+    }
+
     .hamburger {
       display: block;
       z-index: 500 !important;
@@ -350,7 +352,15 @@ span {
     }
 
     .p_s2, .text {
-      padding: 2em 0em 1em 0em;
+      padding: 1em 0em 1em 0em;
+    }
+
+    .p_s2 {
+      font-size: 6.5em;
+    }
+
+    .text {
+      font-size: 5em;
     }
 
     .flexleft_s2 {
@@ -364,7 +374,7 @@ span {
     }
 
     .icons {
-      font-size: 4em;
+      font-size: 7.5em;
     }
 
     .flex_hero_right p {
@@ -376,7 +386,40 @@ span {
     }
   }
 
+  .flexleft_s2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 900px;
+    height: 900px;
+    background-image: url(./pictures/s2_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: center;
+  }
+
 @media screen and (min-width: 1300px){
+  .grid_s4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+
+  .flexleft_s2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 500px;
+    height: 500px;
+    background-image: url(./pictures/s2_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0rem 8rem;
+    align-self: center;
+  }
+
   .fixed {
     display: flex;
     align-items: center;
